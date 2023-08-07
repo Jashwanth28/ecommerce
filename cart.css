@@ -1,0 +1,149 @@
+body {
+    font-family: poppins;
+    background-color: #f0f0f0;
+}
+
+.logo img {
+    background-size: contain;
+    height: auto;
+    width: 20%;
+}
+
+.checkout-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    padding-bottom: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.product-info h2 {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-info p {
+    margin: -5px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 9px;
+    gap: 34px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    background-color: tomato;
+    color: #fff;
+    margin: 0 px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-icon-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #dc3545;
+    transition: color 0.2s ease;
+}
+
+.delete-icon-btn i {
+    margin-right: 5px;
+}
+
+
+/* Styling the icon */
+
+.delete-icon-btn i {
+    transition: transform 0.2s ease;
+}
+
+.delete-icon-btn:hover {
+    color: #c82333;
+    /* Darker shade on hover */
+}
+
+.delete-icon-btn:hover i {
+    transform: scale(1.2);
+    /* Icon scales up on hover */
+}
+
+.total {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.terms-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    margin-top: 24px;
+    padding: 14px;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+    /* Darker shade on hover */
+}
+
+
+/* Additional styling to enhance the appearance */
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+/* Styling the product description */
+
+.product-info p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+
+/* Centering the checkbox and aligning the terms text */
+
+.terms-label {
+    display: flex;
+    align-items: center;
+}

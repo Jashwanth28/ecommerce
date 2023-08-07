@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-vVKxwWudnLRd+ehG+LCp6mS5pGBejiT9vTh6T5csNHWi3FhC6ZWlxpFg9epPKrP1GXtdn19XCQIzXdWsPGnsQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="checkout-container">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="product">
+            <img src="\products\jeans.jpg" alt="Jeans">
+            <div class="product-info">
+                <h2>Jeans</h2>
+                <p>Description about the jeans goes here.</p>
+                <p>Price: Rs. 599</p>
+                <div class="quantity">
+                    <button class="quantity-btn" onclick="decreaseQuantity('jeans')">-</button>
+                    <span id="jeansQuantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity('jeans')">+</button>
+                    <button class="delete-icon-btn" onclick="deleteProduct('jeans')"> 
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="\products\shirt.jpg" alt="Shirt">
+                <div class="product-info">
+                    <h2>Shirt</h2>
+                    <p>Description about the shirt goes here.</p>
+                    <p>Price: Rs. 399</p>
+                    <div class="quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity('shirt')">-</button>
+                    <span id="shirtQuantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity('shirt')">+</button>
+                    <button class="delete-icon-btn" onclick="deleteProduct('jeans')"> 
+                            <i class="fas fa-trash-alt"></i>
+                    </div>
+                        
+                   
+            </div>
+        </div>
+        <div class="total">
+            <h2>Total Price: Rs. <span id="totalPrice">998</span></h2>
+        </div>
+        <label class="terms-label">
+            <input type="checkbox" id="termsCheckbox">
+            Agree to terms and conditions
+        </label>
+        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+                </div>
+                <script src="cart.js"></script>
+</body>
+
+</html>

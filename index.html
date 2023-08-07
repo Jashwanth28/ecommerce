@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Your eCommerce Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">All Products</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Men</button>
+            <div class="dropdown-content">
+                <a href="#" class="redlink">Topwear</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Casual Shirts</a>
+                <a href="#">Formal Shirts</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Jackets</a>
+                <a href="#">Blazers Coats</a>
+                <a href="#">Suits</a>
+                <a href="#">Rain Jackets</a>
+                <a href="#" class="redlink">Indian Festive Wear</a>
+                <a href="#">Kurtas Kurta Sets</a>
+                <a href="#">Sherwanis</a>
+                <a href="#">Nehru Jackets</a>
+                <a href="#">Dhotis</a>
+                <a href="#" class="redlink">Bottomwear</a>
+                <a href="#">Jeans</a>
+                <a href="#">Casual Trousers</a>
+                <a href="#">Formal Trousers</a>
+                <a href="#">Shorts</a>
+                <a href="#">Track Pants Joggers</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Women</button>
+            <div class="dropdown-content">
+                <a href="#" class="redlink">Indian & Fusion Wear</a>
+                <a href="#">Kurtas & Suits</a>
+                <a href="#">Kurtis, Tunics & Tops</a>
+                <a href="#">Sarees</a>
+                <a href="#">Ethnic Wear</a>
+                <a href="#" class="redlink">Footwear</a>
+                <a href="#">Flats</a>
+                <a href="#">Casual Shoes</a>
+                <a href="#">Heels</a>
+                <a href="#">Boots</a>
+                <a href="#">Sports Shoes Floaters</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Kids</button>
+            <div class="dropdown-content">
+                <a href="#" class="redlink">Boys Clothing</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shorts</a>
+                <a href="#">Jeans</a>
+                <a href="#">Trousers</a>
+                <a href="#">Clothing Sets</a>
+                <a href="#">Ethnic Wear</a>
+                <a href="#">Track Pants Pyjamas</a>
+                <a href="#">Jacket, Sweater Sweatshirts</a>
+                <a href="#" class="redlink">Girls Clothing</a>
+                <a href="#">Dresses</a>
+                <a href="#">Tops</a>
+                <a href="#">Tshirts</a>
+                <a href="#">Clothing Sets</a>
+                <a href="#">Lehenga choli</a>
+                <a href="#">Kurta Sets</a>
+                <a href="#">Party wear</a>
+                <a href="#">Dungarees &amp; Jumpsuits</a>
+                <a href="#">Skirts &amp; shorts</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="contact.html">
+
+                <button class="dropbtn">Contact</button>
+            </a>
+        </div>
+
+        <div class="right-section">
+            <!-- Your login button and cart icon here -->
+        </div>
+        <div class="right-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Products, Category, etc...">
+                <button class="search-btn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+            </div>
+            <a href="login.html">
+
+                <button class="login-btn">Login</button>
+            </a>
+            <div class="cart">
+                <a href="cart.html">
+
+                    <div class="cart-icon">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+                <span>Bag</span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="cover">
+
+        <img src="/products/cover.jpg" alt="cover">
+    </div>
+    <!-- Rest of your website content goes here -->
+
+    <div class="featured-products">
+        <div class="product">
+            <div class="product-image">
+                <img src="\products\tshirt.jpg" alt="T-Shirt">
+            </div>
+            <p>T-Shirt</p>
+
+            <p class="product-style">Multie Color T-Shirt</p>
+            <div class="product-prices">
+                <p class="product-price">Rs. 399</p>
+                <p class="product-strike">Rs. 899</p>
+            </div>
+            <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="\products\hoodie.jpg" alt="Hoodie">
+            </div>
+            <p>Red Hoodie</p>
+            <p class="product-style">Relaxed Fit Hoodie</p>
+            <div class="product-prices">
+                <p class="product-price">Rs. 499</p>
+                <p class="product-strike">Rs. 1099</p>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart()">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+        </div>
+
+
+        <div class="product">
+            <div class="product-image-sh">
+                <img src="\products\shirt.jpg" alt="Hoodie">
+            </div>
+            <p>Classic Shirt</p>
+            <p class="product-style">Sky blue checks style</p>
+            <div class="product-prices">
+                <p class="product-price">Rs. 599</p>
+                <p class="product-strike">Rs. 1399</p>
+            </div>
+            <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+        </div>
+
+        <div class="product">
+            <div class="product-image-sh">
+                <img src="\products\jeans.jpg" alt="Hoodie">
+            </div>
+            <p>Jeans</p>
+
+            <p class="product-style">Light Colored Jeans</p>
+            <div class="product-prices">
+                <p class="product-price">Rs. 1199</p>
+                <p class="product-strike">Rs. 1999</p>
+            </div>
+            <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+        </div>
+        <div class="product">
+            <div class="product-image-sh">
+                <img src="\products\sneakers.jpg" alt="Hoodie">
+            </div>
+            <p>Sneakers</p>
+
+            <p class="product-style">Black Stylish Sneakers</p>
+            <div class="product-prices">
+                <p class="product-price">Rs. 499</p>
+                <p class="product-strike">Rs. 799</p>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart('Sneakers', 'Black Stylish Sneakers', 499, 799)">
+                <i class="fa fa-cart-plus"></i>
+                Add to Cart
+            </button>
+        </div>
+        <!-- Add the other products with the same structure -->
+    </div>
+
+    <div class="products-container">
+        <div class="featured-products">
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="\products\tshirtw.jpg" alt="T-Shirt">
+                </div>
+                <p>Women Purple Cotton T-shirt</p>
+
+                <p class="product-style">100% Cotton T-Shirt</p>
+                <div class="product-prices">
+                    <p class="product-price">Rs. 299</p>
+                    <p class="product-strike">Rs. 799</p>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="\products\kurta.jpg" alt="Hoodie">
+                </div>
+                <p>Ethnic Motifs Sequined Kurta </p>
+                <p class="product-style">Blue Kurta</p>
+                <div class="product-prices">
+                    <p class="product-price">Rs. 799</p>
+                    <p class="product-strike">Rs. 1099</p>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart()">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image-sh">
+                    <img src="\products\jeansw.jpg" alt="Hoodie">
+                </div>
+                <p>Blue Skinny Fit</p>
+                <p class="product-style">Sky blue women jeans</p>
+                <div class="product-prices">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-strike">Rs. 2099</p>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image-sh">
+                    <img src="\products\heel.jpg" alt="Hoodie">
+                </div>
+                <p>Heels</p>
+                <p class="product-style">Women Heels </p>
+                <div class="product-prices">
+                    <p class="product-price">Rs. 699</p>
+                    <p class="product-strike">Rs. 1999</p>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+                <div class="product-image-sh">
+                    <img src="\products\foot.jpg" alt="Hoodie">
+                </div>
+                <p>Beige Kitten Sandals</p>
+
+                <p class="product-style">Black Stylish Sneakers</p>
+                <div class="product-prices">
+                    <p class="product-price">Rs. 498</p>
+                    <p class="product-strike">Rs. 1099</p>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fa fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+            <!-- Add the other products with the same structure -->
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Your Ecommerce Website">
+        </div>
+        <div class="contact-info">
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div><br>
+        <div class="foot">
+
+            <div class="dropdown">
+                <button class="dropbtn">Home</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">All Products</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Men</button>
+                <div class="dropdown-content">
+                    <a href="#" class="redlink">Topwear</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Casual Shirts</a>
+                    <a href="#">Formal Shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Sweaters</a>
+                    <a href="#">Jackets</a>
+                    <a href="#">Blazers Coats</a>
+                    <a href="#">Suits</a>
+                    <a href="#">Rain Jackets</a>
+                    <a href="#" class="redlink">Indian Festive Wear</a>
+                    <a href="#">Kurtas Kurta Sets</a>
+                    <a href="#">Sherwanis</a>
+                    <a href="#">Nehru Jackets</a>
+                    <a href="#">Dhotis</a>
+                    <a href="#" class="redlink">Bottomwear</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Casual Trousers</a>
+                    <a href="#">Formal Trousers</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Track Pants Joggers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Women</button>
+                <div class="dropdown-content">
+                    <a href="#" class="redlink">Indian & Fusion Wear</a>
+                    <a href="#">Kurtas & Suits</a>
+                    <a href="#">Kurtis, Tunics & Tops</a>
+                    <a href="#">Sarees</a>
+                    <a href="#">Ethnic Wear</a>
+                    <a href="#" class="redlink">Footwear</a>
+                    <a href="#">Flats</a>
+                    <a href="#">Casual Shoes</a>
+                    <a href="#">Heels</a>
+                    <a href="#">Boots</a>
+                    <a href="#">Sports Shoes Floaters</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Kids</button>
+                <div class="dropdown-content">
+                    <a href="#" class="redlink">Boys Clothing</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Trousers</a>
+                    <a href="#">Clothing Sets</a>
+                    <a href="#">Ethnic Wear</a>
+                    <a href="#">Track Pants Pyjamas</a>
+                    <a href="#">Jacket, Sweater Sweatshirts</a>
+                    <a href="#" class="redlink">Girls Clothing</a>
+                    <a href="#">Dresses</a>
+                    <a href="#">Tops</a>
+                    <a href="#">Tshirts</a>
+                    <a href="#">Clothing Sets</a>
+                    <a href="#">Lehenga choli</a>
+                    <a href="#">Kurta Sets</a>
+                    <a href="#">Party wear</a>
+                    <a href="#">Dungarees &amp; Jumpsuits</a>
+                    <a href="#">Skirts &amp; shorts</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="contact.html">
+
+                    <button class="dropbtn">Contact</button>
+                </a>
+            </div>
+            <div class="newsletter">
+                <form>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form><br>
+            </div>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div><br>
+            <div class="secure-shopping">
+                <i class="fas fa-lock"></i>
+                <!-- Replace with appropriate trust badge icon from Font Awesome -->
+            </div><br>
+            <div class="copyright">
+                <p>&copy;Ecommerce Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="script.js">
+</body>
+
+</html>
